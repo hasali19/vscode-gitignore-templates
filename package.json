@@ -1,7 +1,7 @@
 {
   "name": "gitignore-templates",
   "displayName": "Gitignore Templates",
-  "description": "",
+  "description": "Quickly generate .gitignore file using templates from https://github.com/github/gitignore",
   "version": "0.0.1",
   "publisher": "hasanali",
   "engines": {
