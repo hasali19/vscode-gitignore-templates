@@ -2,7 +2,7 @@
   "name": "gitignore-templates",
   "displayName": "Gitignore Templates",
   "description": "Quickly generate .gitignore file using templates from https://github.com/github/gitignore",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "hasanali",
   "engines": {
     "vscode": "^1.12.0"
