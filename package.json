@@ -4,6 +4,8 @@
   "description": "Quickly generate .gitignore file using templates from https://github.com/github/gitignore",
   "version": "1.0.0",
   "publisher": "hasanali",
+  "repository": "https://github.com/hasali19/vscode-gitignore-templates",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.12.0"
   },
