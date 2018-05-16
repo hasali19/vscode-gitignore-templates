@@ -14,6 +14,12 @@ function activate(context) {
     // The commandId parameter must match the command field in package.json
     var disposable = vscode.commands.registerCommand('extension.getTemplates', function () {
         // The code you place here will be executed every time your command is executed
+        
+        if (!vscode.workspace.rootPath) {
+            vscode.window.showErrorMessage('Open a folder first');
+            return;
+        }
+
         vscode.window
             .showQuickPick(new Promise((resolve, reject) => {
                 axios.get('https://api.github.com/gitignore/templates')
@@ -22,11 +28,6 @@ function activate(context) {
             }))
             .then(selection => {
                 if (!selection) return;
-
-                if (!vscode.workspace.rootPath) {
-                    vscode.window.showErrorMessage('Open a folder first');
-                    return;
-                }
 
                 var templatePath = path.join(vscode.workspace.rootPath, '.gitignore');
 
