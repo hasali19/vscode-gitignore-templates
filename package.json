@@ -37,6 +37,6 @@
     "@types/mocha": "^2.2.32"
   },
   "dependencies": {
-    "axios": "^0.16.1"
+    "axios": "^0.19.2"
   }
 }
